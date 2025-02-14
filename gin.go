@@ -321,7 +321,7 @@ func (engine *Engine) Use(middleware ...HandlerFunc) IRoutes {
 	return engine
 }
 
-// With returns a Engine with the configuration set in the OptionFunc.
+// With returns an Engine with the configuration set in the OptionFunc.
 func (engine *Engine) With(opts ...OptionFunc) *Engine {
 	for _, opt := range opts {
 		opt(engine)
